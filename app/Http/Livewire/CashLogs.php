@@ -32,7 +32,10 @@ class CashLogs extends Component
         else {
             $cashlogs = CashLog::with('payer', 'approver')->latest()->paginate(10);
         }
-        return view('livewire.cash-logs', compact('cashlogs'));
+        $total = CashLog::sum('amount');
+        $cashIn = CashLog::where('cash_type', 1)->sum('amount');
+        $cashOut = CashLog::where('cash_type', 2)->sum('amount');
+        return view('livewire.cash-logs', compact('cashlogs', 'total', 'cashOut', 'cashIn'));
     }
 
     public function delete()

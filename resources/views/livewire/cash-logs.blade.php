@@ -76,20 +76,19 @@
                         @endforeach
 
                         </tbody>
-                        {{--                            <tfoot>--}}
-                        {{--                            <tr>--}}
-                        {{--                                <th  style="text-align:right">Available:</th>--}}
-                        {{--                                <th>{{$cashIn - $cashOut}}</th>--}}
-                        {{--                                <th  style="text-align:right">Cash In:</th>--}}
-                        {{--                                <th>{{$cashIn}}</th>--}}
-                        {{--                                <th  style="text-align:right">Cash Out:</th>--}}
-                        {{--                                <th>{{$cashOut}}</th>--}}
-                        {{--                                <th  style="text-align:right">Total:</th>--}}
-                        {{--                                <th>{{$total}}</th>--}}
-                        {{--                                <th colspan="7" style="text-align:right">Cash Out:</th>--}}
-                        {{--                                <th>$12300</th>--}}
-                        {{--                            </tr>--}}
-                        {{--                            </tfoot>--}}
+                                                    <tfoot>
+                                                    <tr>
+                                                        <th  style="text-align:right">Available:</th>
+                                                        <th>{{$cashIn - $cashOut}}</th>
+                                                        <th  style="text-align:right">Cash In:</th>
+                                                        <th>{{$cashIn}}</th>
+                                                        <th  style="text-align:right">Cash Out:</th>
+                                                        <th>{{$cashOut}}</th>
+                                                        <th  style="text-align:right">Total:</th>
+                                                        <th>{{$total}}</th>
+
+                                                    </tr>
+                                                    </tfoot>
 
                     </table>
                     <br>
