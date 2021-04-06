@@ -14,13 +14,6 @@
                 <li @if (\Request::is('/cashlogs')) class="active" @endif>
                     <a href="{{url('/cashlogs')}}"><i class="la la-user"></i> <span>Cash Logs</span></a>
                 </li>
-{{--                <li @if (\Request::is('admin/dashboard*')) class="active" @endif>--}}
-{{--                    <a href="{{url('/cashlog')}}"><i class="la la-money"></i> <span>CashLog </span></a>--}}
-{{--                </li>--}}
-
-{{--                <li @if (\Request::is('admin/dashboard*')) class="active" @endif>--}}
-{{--                    <a href="{{url('/cashlog')}}"><i class="la la-list"></i> <span>Reports </span></a>--}}
-{{--                </li>--}}
 
             </ul>
 

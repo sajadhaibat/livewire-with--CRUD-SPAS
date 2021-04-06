@@ -27,31 +27,6 @@
     <!-- Header Menu -->
     <ul class="nav user-menu">
 
-
-        <!-- Notifications -->
-
-        <!-- /Notifications -->
-
-
-{{--        <li class="nav-item dropdown has-arrow main-drop">--}}
-{{--            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">--}}
-{{--							<span class="user-img"><img src="" alt="">--}}
-{{--							<span class="status online"></span></span>--}}
-{{--                <span>Admin</span>--}}
-{{--            </a>--}}
-{{--            <div class="dropdown-menu">--}}
-{{--                <a class="dropdown-item" href="profile.html">My Profile</a>--}}
-{{--                <a class="dropdown-item" href="settings.html">Settings</a>--}}
-{{--                <a class="dropdown-item" href="#"--}}
-{{--                   onclick="event.preventDefault();--}}
-{{--                                    document.getElementById('logout-form').submit();">--}}
-{{--                    {{ __('Logout') }}--}}
-{{--                </a>--}}
-{{--                <form id="logout-form" action="#" method="POST" style="display: none;">--}}
-{{--                    @csrf--}}
-{{--                </form>--}}
-{{--            </div>--}}
-{{--        </li>--}}
     </ul>
     <!-- /Header Menu -->
 

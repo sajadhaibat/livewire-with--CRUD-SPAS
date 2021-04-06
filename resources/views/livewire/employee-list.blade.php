@@ -16,7 +16,7 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-striped mb-0 datatable">
+                    <table class="table table-striped mb-0 searchable">
                         <thead>
                         <tr>
                             <th class="disable_sort">#</th>
@@ -46,3 +46,7 @@
 </div>
 <script src="{{asset('js/jquery.dataTables.min.js')}}"></script>
 <script src="{{asset('js/dataTables.bootstrap4.min.js')}}"></script>
+<script>
+    $('.searchable').dataTable().fnDestroy();
+    $('.searchable').dataTable();
+</script>

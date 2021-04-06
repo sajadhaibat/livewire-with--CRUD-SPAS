@@ -54,23 +54,13 @@
                                     <div class="dropdown dropdown-action">
                                         <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item"  wire:click="selectItem({{$cash->id}}, 'view')"><i class="fa fa-eye m-r-5"></i> View</a>
+{{--                                            <a class="dropdown-item"  wire:click="selectItem({{$cash->id}}, 'view')"><i class="fa fa-eye m-r-5"></i> View</a>--}}
                                             <a class="dropdown-item"  wire:click="selectItem({{$cash->id}}, 'update')"><i class="fa fa-pencil m-r-5"></i> Edit</a>
                                             <a class="dropdown-item"  wire:click="selectItem({{$cash->id}}, 'delete')"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
                                         </div>
                                     </div>
                                 </td>
 
-{{--                                <td>--}}
-{{--                                    <div class="btn-group">--}}
-
-{{--                                        <button class="btn btn-sm btn-info mr-1" wire:click="selectItem({{$cash->id}}, 'view')"> <i class="fa fa-eye"></i></button>--}}
-{{--                                        <button class="btn btn-sm btn-success mr-1" wire:click="selectItem({{$cash->id}}, 'update')"> <i class="fa fa-pencil"></i></button>--}}
-
-{{--                                        <button class="btn btn-sm btn-danger" wire:click="selectItem({{$cash->id}}, 'delete')"> <i class="fa fa-times"></i></button>--}}
-{{--                                    </div>--}}
-{{--                                </td>--}}
-                                {{--                                    <td></td>--}}
                             </tr>
 
                         @endforeach
@@ -97,10 +87,7 @@
             </div>
         </div>
 <div>
-{{--    <p>okkk </p>--}}
-{{--                                <livewire:view-cash-log, ['cashLogId' => 'okk']/>--}}
 
-{{--    <livewire:view-cash-log ['cashLogId' => "it is"]>--}}
 
 </div>
             <!-- Modal -->
@@ -114,7 +101,6 @@
                             </button>
                         </div>
                         <div class="modal-body">
-{{--                            <livewire:cash-log-form />--}}
                             @livewire('cash-log-form', key(time()))
 
                         </div>

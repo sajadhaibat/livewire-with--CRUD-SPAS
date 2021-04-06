@@ -12,29 +12,13 @@
 
 <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('img/favicon.png')}}">
-
-    <!-- Bootstrap CSS -->
-{{--    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">--}}
-
-    <!-- Fontawesome CSS -->
-{{--    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">--}}
-
-    <!-- Lineawesome CSS -->
-{{--    <link rel="stylesheet" href="{{asset('css/line-awesome.min.css')}}">--}}
-
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
     <!-- jQuery -->
     <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
 
-    <!-- Custom JS -->
-
-    {{--   Adding specific style of each page--}}
-
     @yield('styles')
-{{--    <livewire:styles>--}}
-{{--    <livewire:scripts>--}}
     @livewireStyles()
     @livewireScripts()
     <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
